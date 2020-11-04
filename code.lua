@@ -1,5 +1,5 @@
 local MACRO_NAME = "HSPotion"
-local itemSequence = { 5512, 171267, 169451 } -- Hs, Spiritual Potion, Abyssal Potion
+local itemSequence = { 5512, 177278, 171267, 169451 } -- Hs, Phial of Serenity, Spiritual Potion, Abyssal Potion
 local fallback = itemSequence[2]
 
 
