@@ -1,6 +1,6 @@
 local MACRO_NAME = "HSPotion"
 local itemSequence = { 5512, 177278, 171267, 169451 } -- Hs, Phial of Serenity, Spiritual Potion, Abyssal Potion
-local fallback = itemSequence[2]
+local fallback = 171267
 
 
 local function UpdateMacro(macroname, newbody)
@@ -14,7 +14,7 @@ local function UpdateMacro(macroname, newbody)
 end
 
 local function FindContainerItemByID(itemID)
-    for bag=1,NUM_BAG_SLOTS do
+    for bag=0,NUM_BAG_SLOTS do
         for slot=1, GetContainerNumSlots(bag) do
             local slotItemID = GetContainerItemID(bag, slot)
             if slotItemID == itemID then
